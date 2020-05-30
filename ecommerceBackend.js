@@ -1,6 +1,8 @@
 const config=require('config');
 const debug=require('debug')('consoleLogDebug');
 const express=require('express');
+const helmet=require('helmet');
+const compression=require('compression');
 
 const cors=require('cors');
 let corsConfig={
@@ -10,6 +12,8 @@ let corsConfig={
 }
 
 const app=express();
+app.use(helmet()); //use in production
+app.use(compression()); //use in production
 app.use(cors(corsConfig));
 require('./startup/nodeconfig')(app);
 require('./startup/winstonlog')();
