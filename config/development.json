@@ -1,0 +1,4 @@
+{
+    "name":"development environment",
+    "db":"mongodb://localhost/ecommerceBackend"
+}   

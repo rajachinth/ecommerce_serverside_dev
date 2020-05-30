@@ -1,0 +1,76 @@
+{"level":"error","message":"Joi.any(...).required(...).min is not a function"}
+{"level":"error","message":"Joi.any(...).required(...).min is not a function"}
+{"level":"error","message":"Cannot read property 'error' of undefined"}
+{"level":"error","message":"Cannot read property 'password' of nullCannot read property 'password' of null","stack":"TypeError: Cannot read property 'password' of null\n    at C:\\Angular 8+\\ecommerce-project\\ecomerce-serverside\\routes\\userlogin.js:15:80\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'username' of undefined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'username' of undefined"}
+{"level":"error","message":"Unexpected token \r in JSON at position 2"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'itemCount' of null"}
+{"level":"error","message":"unhandledRejection DocumentNotFoundError: No document found for query \"{ _id: 5ec02aef80defb27d0ecdbdc }\" on model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection DocumentNotFoundError: No document found for query \"{ _id: 5ec0270ce0500c0f0890580d }\" on model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection ValidationError: productDetails: Cast to embedded failed for value \"1\" at path \"productDetails\""}
+{"level":"error","message":"unhandledRejection ReferenceError: push is not defined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'push' of undefined"}
+{"level":"error","message":"unhandledRejection ReferenceError: productDetails is not defined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'details' of undefined"}
+{"level":"error","message":"unhandledRejection TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","message":"Unexpected token } in JSON at position 344"}
+{"level":"error","message":"unhandledRejection TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","message":"unhandledRejection Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"unhandledRejection ValidationError: orderID: Cast to ObjectId failed for value \"O-X007\" at path \"orderID\""}
+{"level":"error","message":"unhandledRejection Error [ERR_HTTP_HEADERS_SENT]: Cannot set headers after they are sent to the client"}
+{"level":"error","message":"unhandledRejection CastError: Cast to string failed for value \"{ '$elemMatch': { productID: '0020' } }\" at path \"productID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection MissingSchemaError: Schema hasn't been registered for model \"undefined\".\nUse mongoose.model(name, schema)"}
+{"level":"error","message":"unhandledRejection TypeError: queryData.find is not a function"}
+{"level":"error","message":"unhandledRejection ReferenceError: DBdata is not defined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'forEach' of undefined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'forEach' of undefined"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'forEach' of undefined"}
+{"level":"error","message":"uncaughtExceptionTypeError: Cannot use 'in' operator to search for 'getters' in UserData"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Joi.any(...).required(...).min is not a function"}
+{"level":"error","message":"unhandledRejection TypeError: Joi.string.required is not a function"}
+{"level":"error","message":"unhandledRejection TypeError: queryData.findOneAndUpdate is not a function"}
+{"level":"error","message":"unhandledRejection ValidationError: productList.1._id: Cast to ObjectId failed for value \"[\n  {\n    productID: '00X1',\n    title: 'titleone',\n    author: 'authorone',\n    price: 200,\n    category: 1,\n    imageURL: 'url'\n  }\n]\" at path \"_id\", productList.1.imageURL: Path `imageURL` is required., productList.1.category: Path `category` is required., productList.1.price: Path `price` is required., productList.1.author: Path `author` is required., productList.1.title: Path `title` is required., productList.1.productID: Path `productID` is required."}
+{"level":"error","message":"unhandledRejection MongoError: pool is draining, new operations prohibited"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"uhandlederror"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"unhandledRejection function Error() { [native code] }"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"uncaughtExceptionError"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"unhandledRejection Error: uhandlederror"}
+{"level":"error","message":"uhandlederror"}
+{"level":"error","message":"unhandledRejection Error: undefinedddd"}
+{"level":"error","message":"unhandledRejection Error: unhandledd"}
+{"level":"error","message":"Unexpected string in JSON at position 33"}
+{"level":"error","message":"Unexpected string in JSON at position 33"}
+{"level":"error","message":"Unexpected string in JSON at position 33"}
+{"level":"error","message":"Unexpected token ' in JSON at position 13"}
+{"level":"error","message":"Unexpected token ' in JSON at position 13"}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"rajachinth\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"rajachinth\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"Unexpected token } in JSON at position 43"}
+{"level":"error","message":"unhandledRejection TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","message":"unhandledRejection ReferenceError: orderShipment is not defined"}
+{"level":"error","message":"unhandledRejection TypeError: Converting circular structure to JSON\n    --> starting at object with constructor 'Socket'\n    |     property 'parser' -> object with constructor 'HTTPParser'\n    --- property 'socket' closes the circle"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property '_id' of null"}
+{"level":"error","message":"unhandledRejection MongoError: interrupted at shutdown"}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"{\n  name: 'Rajasekhar',\n  subscription: 'Prime',\n  admin: true,\n  loggedin: true,\n  uniqueID: '5ec96bfab4997e4744c02261',\n  iat: 1590606207\n}\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"{\n  name: 'Rajasekhar',\n  subscription: 'Prime',\n  admin: true,\n  loggedin: true,\n  uniqueID: '5ec96bfab4997e4744c02261',\n  iat: 1590606458\n}\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection TypeError: Cannot read property 'populated' of null"}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"rajachinth\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection CastError: Cast to ObjectId failed for value \"rajachinth\" at path \"userID\" for model \"ShoppingData\""}
+{"level":"error","message":"unhandledRejection MongoError: pool is draining, new operations prohibited"}
+{"level":"error","message":"unhandledRejection MongoError: pool is draining, new operations prohibited"}
+{"level":"error","message":"unhandledRejection MongoError: pool is draining, new operations prohibited"}
