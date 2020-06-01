@@ -1,4 +1,4 @@
 {
     "name":"development environment",
-    "db":"mongodb://localhost/ecommerceBackend"
+    "db":"mongodb+srv://rajasekhar:Rajasekhar9040@online-book-shelf-i376w.mongodb.net/test?retryWrites=true&w=majority"
 }   
