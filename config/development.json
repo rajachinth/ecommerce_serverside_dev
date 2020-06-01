@@ -1,4 +1,3 @@
 {
-    "name":"development environment",
-    "db":"mongodb+srv://rajasekhar:Rajasekhar9040@online-book-shelf-i376w.mongodb.net/test?retryWrites=true&w=majority"
+    "name":"development environment"
 }   

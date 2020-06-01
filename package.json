@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node ecommerceBackend.js"
+    "start": "node ecommerceBackend.js"
   },
   "engines": {
     "node": "12.13.1"
-  },  
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "helmet": "^3.22.0",
     "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.5.8",
     "mongoose": "^5.9.14",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.3",

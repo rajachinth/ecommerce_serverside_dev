@@ -1,3 +1,5 @@
 {
-    "secretKey":"ecommercePrivateKey"       
+    "secretKey":"ecommercePrivateKey",
+    "applicationCoreDB":"applicationCoreDB",
+    "applicationErrorLogDB":"applicationErrorLogDB"
 }

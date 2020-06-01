@@ -1,4 +1,5 @@
 const winston=require('winston');
+const config=require('config');
 require('winston-mongodb');
 
 const logger=winston.createLogger({
@@ -6,7 +7,7 @@ const logger=winston.createLogger({
     transports: [
         new winston.transports.Console(),
         new winston.transports.File({filename:'winstonError.log',level:'error'}),
-        new winston.transports.MongoDB({db:'mongodb://localhost/ecommerceBackendError'}),
+        new winston.transports.MongoDB({db:config.get('applicationErrorLogDB')}),
     ],
 });
 
