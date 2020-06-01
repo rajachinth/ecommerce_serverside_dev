@@ -20,6 +20,6 @@ require('./startup/winstonlog')();
 require('./startup/mongodb')();
 require('./startup/routes')(app);
 app.listen(process.env.PORT,()=>{
-    debug(`port is listening on ${config.util.getEnv('HOST')}...`);})
+    debug(`port is listening on ${process.env.PORT}...`);})
 
 
