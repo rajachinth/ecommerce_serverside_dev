@@ -8,6 +8,27 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
 
 ▶ Souce code for `Angular front-end` application is available at [ecommerce_clientside_dev](https://github.com/rajachinth/ecommerce_clientside_dev)
 
+## Out-Line of the Project
+
+API is designed for an ecommerce book-store application with two types of users,
+
+`1. Normal user`  
+`2. Admin user`   
+
+● New user can register under sign-up route with membership details(`prime or non-prime`).
+
+● Admin user can modify the shopping list products and can manage all the orders(`this route is in development stage currently`).
+
+● Admin user can add the new products to the Data-Base.
+
+● A normal user can place order and can view his past and current orders in his order list.  
+
+● User can add producst to the cart list and can order it at any time, till then all the products stored in the shopping cart.  
+
+● Every user should have a unique ID used to login, here we are checking for the duplicates in data-base before user sign-up, this helps to avoids duplicates user login ID's in database.  
+
+● LoggedIn user can add products to his cart and place order and can also delete the order if required.  
+
 ## Modelling Relationships in MongoDB (Mongoose)
 
 1. using References (Normalization)  
