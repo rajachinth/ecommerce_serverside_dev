@@ -1,4 +1,4 @@
-## Online-Book-shelf (NodeJS API)
+## Online-Book-Shelf (NodeJS API)
 
 This is an ecommerce application backend API build on Node and Express.  
 
