@@ -1,6 +1,6 @@
 ## Online-Book-Shelf (NodeJS API)
 
-This is an ecommerce application backend API build on `Node(12.13.1)` and `Express(4.17.1)`.  
+This is an ecommerce application API build on `Node(12.13.1)` and `Express(4.17.1)`.  
 
 ▶ Deployed on `Heroku`, project is live on this [link](https://online-book-shelf.herokuapp.com/)
 
