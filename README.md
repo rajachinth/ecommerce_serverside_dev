@@ -18,6 +18,7 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
    query performance VS query consistency; based on this principle DB should be designed.  
    
    **1. In Relational DB we use references to store addtional properties in another document.**  
+    <pre>
     courses:{  
         coursename:"course 1",  
         author:refID  
@@ -25,6 +26,7 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
     authors:{  
         authorname:"john kewis"  
     }  
+    </pre>
     
     **Advantage**: It's easy to change the author names in future, just to change at one place.  
      i.e., CONSISTENCY.  
@@ -32,12 +34,14 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
     i.e., PERFORMANCE issue  
     
     **2. In Embedded/Nested document approach we nest the data.**  
+    <pre>
     courses:{  
         coursename:"course 1",  
         authors:{  
             authorname:"john kewis"  
         }  
     }  
+    </pre>
     
     **Advantage:** takes less time to retrive data by query document and its fast  
     i.e., PERFORMANCE is good  
@@ -45,6 +49,7 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
     i.e., CONSISTENCY issue   
     
     **3. Hybrid approach, only neccessary properties will be added to the nested document but not all.**  
+    <pre>
     author:{  
         name:"XXX",  
         age:"XXX",  
@@ -58,6 +63,7 @@ This is an ecommerce application backend API build on `Node(12.13.1)` and `Expre
             name:"XXX"  
         }  
     }  
+    </pre>
     we see like only "name" property added but not all.  
     
  ## MongoDB Schemas used in this API
