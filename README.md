@@ -1,6 +1,6 @@
 ## Online-Book-Shelf (NodeJS API)
 
-This is an ecommerce application backend API build on Node and Express.  
+This is an ecommerce application backend API build on `Node(12.13.1` and `Express(4.17.1)`.  
 
 ▶ Deployed on `Heroku`, project is live on this [link](https://online-book-shelf.herokuapp.com/)
 
@@ -60,6 +60,114 @@ This is an ecommerce application backend API build on Node and Express.
     }  
     we see like only "name" property added but not all.  
     
+ ## MongoDB Schemas used in this API
+
+<pre>
+This is the main schema to render all ecommerce related data of the particular user, here used the Normalized approach, and later we use populate to get all the data.
+
+ECOMMERCE USER SCHEMA
+
+const ecommerceUserSchema=new mongoose.Schema({
+    uniqueID:{type:String,required:true},
+    userdetails:{type:mongoose.Schema.Types.ObjectId,ref:'UserData'},
+    shoppingdetails:{type:mongoose.Schema.Types.ObjectId,ref:'ShoppingData'},
+    shoppingsummary:{type:mongoose.Schema.Types.ObjectId,ref:'ShoppingSummaryData'},
+    orderlist:[{ orderDetails:{type:mongoose.Schema.Types.ObjectId,ref:'orderListData'},
+                shippingDetails:{type:mongoose.Schema.Types.ObjectId,ref:'orderShipmentData'}
+              }]
+});
+
+USER ORDER LIST SCHEMA
+
+const orderListSchema=new mongoose.Schema({
+    userID:mongoose.Schema.Types.ObjectId,
+    orderID:{type:String,required:true},
+    orderDate:{type:Date},
+    productDetails:[{
+        productID:{type:String,required:true,max:6},
+        title:{type:String,required:true},
+        price:{type:Number,required:true},
+        itemCount:{type:Number,required:false},
+        imageURL:{type:String,require:false}
+    }],
+    productSummary:{
+        totalItemCount:{type:Number,require:true},
+        totalItemCost:{type:Number,require:true}
+    },
+    shippingDetails:mongoose.Schema.Types.ObjectId
+});
+
+USER ORDER SHIPPMENT SCHEMA
+
+const orderShipmentSchema=new mongoose.Schema({
+    userID:mongoose.Schema.Types.ObjectId,
+    orderID:{type:String,required:true,max:50},
+    name:{type:String,required:true,max:15,min:4},
+    address:{type:String,required:true,max:50},
+    pincode:{type:Number,required:true},
+    mobile:{type:Number,required:true}
+});
+
+USER CART LIST SCHEMA
+
+const shoppingCartSchema=new mongoose.Schema({
+    userID:mongoose.Schema.Types.ObjectId,
+    productDetails:[{
+        productID:{type:String,required:true,max:5},
+        title:{type:String,required:true},
+        price:{type:Number,required:true},
+        imageURL:{type:String,required:true},
+        itemCount:{type:Number,required:false}
+    }]
+});
+
+SHOPPING CATEGORY SCHEMA
+
+const CategorySchema=new mongoose.Schema({
+    schemaDefaultID:{type:String,required:true},
+    categoryList:[{
+        categoryID:{type:Number,required:true},
+        id:{type:Number,required:true},
+        language:{type:String,required:true}
+    }]
+});
+
+SHOPPING PRODUCT SCHEMA
+
+const productSchema=new mongoose.Schema({
+    schemaDefaultID:{type:String,required:true},
+    productList:[{
+     productID:{type:String,required:true,minlength:4},
+     title:{type:String,required:true},
+     author:{type:String,required:true},
+     price:{type:Number,required:true},
+     category:{type:Number,required:true},
+     imageURL:{type:String,required:true}
+    }]
+ });
+ 
+ USER SHOPPING SUMMARY SCHEMA
+ 
+ const shoppingSummarySchema=new mongoose.Schema({
+    userID:mongoose.Schema.Types.ObjectId,
+    totalItemsCount:{type:Number,required:false},
+    totalItemsCost:{type:Number,required:false}
+});
+
+USER DATA SCHEMA
+
+const userSchema=new mongoose.Schema({
+    username:{type:String,minlength:4,maxlength:15,required:true},
+    mobile:{type:Number,maxlength:10,required:true},
+    uniqueID:{type:String,minlength:6,maxlength:10},
+    password:{type:String,minlength:4,maxlength:80},
+    membership:{type:String},
+    premiumcost:{type:Number,default: function(){ if(this.membership == 'Non-Prime') return 250;
+                             else return 500; }},
+    admin:{type:Boolean,required:true}
+});
+</pre>
+
 **Transactions (two phase commit in MongoDB)**  
 
 In sequel or other relational databse we use transactions which means a set of actions/operations thats executes 
@@ -155,6 +263,5 @@ its better to write automated test cases for a few which takes huge time for man
 ->It again depends on the project requirements, time-frame, capital to decide whether to write 
 100% code coverage automated test cases for production code or **not**.
 
-`Jest be used as they are mostly similar in code signature.`**(my personal choice)**  
-
+`Jest Frame-Work`  be used as they are mostly similar in code signature with `Jasmine`.**(my personal choice)**  
 
